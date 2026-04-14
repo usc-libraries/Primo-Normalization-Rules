@@ -1,9 +1,10 @@
+
 rule "Primo VE - Lds17"
 when
-  MARC."100" has any "1"
+   MARC is "100"."1"
 then
-  set TEMP"1" to MARC."100" subfields "1"
-  set TEMP"2" to MARC."100" subfields "1"
+  set TEMP"1" to MARC."100"."1"
+  set TEMP"2" to MARC."100"."1"
   add suffix (TEMP"2","</a>")
   add prefix (TEMP"1","<a target=\"_blank\" href=\"")
   add suffix (TEMP"1","\">")
@@ -11,8 +12,7 @@ then
   create pnx."display"."lds17" with TEMP"1"
 end
 
-
-rule "Primo VE - Lds17"
+rule "Primo VE - Lds17a"
 when
    MARC is "600"."1"
 then
