@@ -7,7 +7,7 @@ set TEMP"1" to MARC."700" subfields "1"
 set TEMP"2" to MARC."700" subfields "a"
 set TEMP"3" to MARC."700" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/wiki/)\\S+")
+remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/(wiki|entity)/)\\S+")
 add suffix (TEMP"2","</a><img class=\"wologo\" src=\"https://usclibraries.usc.edu/dependencies/images/logos/external/wikidatawiki.svg\" alt=\"wikidata\" width=\"20\" />")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -43,7 +43,7 @@ set TEMP"1" to MARC."700" subfields "1"
 set TEMP"2" to MARC."700" subfields "a"
 set TEMP"3" to MARC."700" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?:www\\.wikidata\\.org/wiki/\\S+|orcid\\.org/\\S+)")
+remove substring using regex (TEMP"1","https?://(www\\.wikidata\\.org/(wiki|entity)/\\S+|orcid\\.org/\\S+)")
 add suffix (TEMP"2","</a>")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -60,7 +60,7 @@ set TEMP"1" to MARC."710" subfields "1"
 set TEMP"2" to MARC."710" subfields "a"
 set TEMP"3" to MARC."710" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/wiki/)\\S+")
+remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/(wiki|entity)/)\\S+")
 add suffix (TEMP"2","</a><img class=\"wologo\" src=\"https://www.wikidata.org/static/images/icons/wikidatawiki.svg\" alt=\"wikidata\" width=\"25\" />")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -96,7 +96,7 @@ set TEMP"1" to MARC."710" subfields "1"
 set TEMP"2" to MARC."710" subfields "a"
 set TEMP"3" to MARC."710" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?:www\\.wikidata\\.org/wiki/\\S+|orcid\\.org/\\S+)")
+remove substring using regex (TEMP"1","https?://(www\\.wikidata\\.org/(wiki|entity)/\\S+|orcid\\.org/\\S+)")
 add suffix (TEMP"2","</a>")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -113,7 +113,7 @@ set TEMP"1" to MARC."100" subfields "1"
 set TEMP"2" to MARC."100" subfields "a"
 set TEMP"3" to MARC."100" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/wiki/)\\S+")
+remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/(wiki|entity)/)\\S+")
 add suffix (TEMP"2","</a><img class=\"wologo\" src=\"https://www.wikidata.org/static/images/icons/wikidatawiki.svg\" alt=\"wikidata\" width=\"25\" />")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -148,7 +148,7 @@ set TEMP"1" to MARC."100" subfields "1"
 set TEMP"2" to MARC."100" subfields "a"
 set TEMP"3" to MARC."100" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?:www\\.wikidata\\.org/wiki/\\S+|orcid\\.org/\\S+)")
+remove substring using regex (TEMP"1","https?://(www\\.wikidata\\.org/(wiki|entity)/\\S+|orcid\\.org/\\S+)")
 add suffix (TEMP"2","</a>")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -165,7 +165,7 @@ set TEMP"1" to MARC."110" subfields "1"
 set TEMP"2" to MARC."110" subfields "a"
 set TEMP"3" to MARC."110" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/wiki/)\\S+")
+remove substring using regex (TEMP"1","https?://(?!www\\.wikidata\\.org/(wiki|entity)/)\\S+")
 add suffix (TEMP"2","</a><img class=\"wologo\" src=\"https://www.wikidata.org/static/images/icons/wikidatawiki.svg\" alt=\"wikidata\" width=\"25\" />")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
@@ -200,7 +200,7 @@ set TEMP"1" to MARC."110" subfields "1"
 set TEMP"2" to MARC."110" subfields "a"
 set TEMP"3" to MARC."110" subfields "b"
 concatenate with delimiter (TEMP"2",TEMP"3","")
-remove substring using regex (TEMP"1","https?://(?:www\\.wikidata\\.org/wiki/\\S+|orcid\\.org/\\S+)")
+remove substring using regex (TEMP"1","https?://(www\\.wikidata\\.org/(wiki|entity)/\\S+|orcid\\.org/\\S+)")
 add suffix (TEMP"2","</a>")
 add prefix (TEMP"1","<a target=\"_blank\" href=\"")
 add suffix (TEMP"1","\">")
