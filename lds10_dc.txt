@@ -1,0 +1,10 @@
+rule "Primo VE - Lds10"
+when
+    DCMI is "dc"."subject"
+then
+    set TEMP"1" to DCMI."dc"."subject"
+    remove leading and trailing spaces (TEMP"1")
+    replace string by string (TEMP"1","\\s*,\\s*",",")
+    return list using regex (TEMP"2",TEMP"1","[^,]+")
+    create pnx."display"."lds10" with list TEMP"2"
+end
